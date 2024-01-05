@@ -4,30 +4,29 @@ import styles from "./about.module.css";
 import SocialMedia from "@/components/social-media";
 
 export default function About() {
-    function handleOnClick() {
-        console.log("clicou");
-    }
+
     return (
-        <div className={styles.container}>
-            <div className={styles.textContainer}>
-                <p>Olá, meu nome é </p>
-                <h1>Rafael Castro</h1>
-                <span className={styles.span}>
-                    <h3>Desenvolvedor Mobile</h3>
-                </span>
-            <SocialMedia />
-            </div>
-            <div className={styles.imgContainer}>
-                <div className={styles.backgroundImage} />
+        <div className={styles.container} id="about">
+            <div className={styles.imageContainer}>
                 <Image
                     src="/images/me.jpg"
-                    alt=""
-                    width={150}
-                    height={150}
+                    width={300}
+                    height={300}
+                    alt="me"
                     style={{
-                        borderRadius: "50%",
+                        objectFit: 'cover'
                     }}
                 />
+                </div>
+            <div className={styles.textContainer}>
+                <h1>Sobre mim</h1>
+                <p>
+                    Me chamo Rafael Teixeira de Castro, tenho 21 anos e sou
+                    desenvolvedor mobile! Atualmente minha stack principal é o
+                    React Native, mas estudo o desenvolvimento nativo com o
+                    Kotlin. Também atuo como desenvolvedor full stack utilizando
+                    o NodeJs no backend, e o NextJs no front end.
+                </p>
             </div>
         </div>
     );

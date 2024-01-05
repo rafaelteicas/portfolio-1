@@ -6,12 +6,16 @@ import { useState } from "react";
 
 const links: NavLinkProps[] = [
     {
-        path: "/",
+        path: "#home",
         title: "Home",
     },
     {
-        path: "/contact",
-        title: "Contato",
+        path: "#about",
+        title: "Sobre",
+    },
+    {
+        path: "#skills",
+        title: "Habilidades",
     },
     {
         path: "/about",

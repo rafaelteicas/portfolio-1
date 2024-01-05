@@ -3,13 +3,14 @@ import styles from './card.module.css'
 import { Tilt } from "react-tilt";
 
 interface Props {
-  src: string
-  alt: string
-  title: string
-  desc: string
+    src: string
+    alt: string
+    title: string
+    desc?: string
+    size?: number
 }
 
-export default function Card({src, alt,desc,title}: Props) {
+export default function Card({src, alt,desc,title,size}: Props) {
   const defaultOptions = {
       reverse: false,
       max: 15,
@@ -23,19 +24,12 @@ export default function Card({src, alt,desc,title}: Props) {
               <Image
                   src={src}
                   alt={alt}
-                  height={720}
-                  width={1080}
-                  style={{
-                      width: "90%",
-                      height: "30%",
-                      borderRadius: 20,
-                  }}
+                  height={size ? size : 720}
+                  width={size ? size : 1080}
               />
               <div className={styles.boxText}>
-                <h3>{title}</h3>
-                  <p>
-                      {desc}
-                  </p>
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
               </div>
           </div>
       </Tilt>

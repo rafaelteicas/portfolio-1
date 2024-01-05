@@ -1,12 +1,12 @@
 import Image from "next/image";
-import styles from "./tech.module.css";
+import styles from "./skills.module.css";
 import { Props } from "./types";
 
-export function TechIcons({ icon, title }: Props) {
+export function SkillsIcons({ icon, title }: Props) {
     return (
         <div className={styles.box}>
             <div className={styles.icon}>
-                <Image src={icon} alt={icon} fill />
+                <Image src={icon} alt={icon} width={50} height={50} />
             </div>
         </div>
     );

@@ -1,19 +1,20 @@
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import HomeContent from "./home-content";
+import Tech from "./skills";
 import About from "./about";
-import Contact from "./contact";
-import Tech from "./tech";
-import Projects from "./projects";
 
 
 export default function Home() {
     return (
         <div className="container">
             <Navbar />
-            <div className="children">
+            <div className="children" id="home">
+                <HomeContent />
                 <About />
-                <Projects />
+                <Tech />
             </div>
-            <Contact />
+            <Footer />
         </div>
     );
 }
