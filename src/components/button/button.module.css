@@ -1,0 +1,10 @@
+.container{
+  padding: 20px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 20px;
+  background-color: var(--bgSoft);
+  color: var(--text);
+}
