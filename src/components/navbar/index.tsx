@@ -1,5 +1,5 @@
 'use client';
-import {NavbarContainer, NavbarItems, NavbarLogo} from './navbar';
+import {NavbarContainer, NavbarItems, NavbarLogo} from './styles/navbar.styles';
 import NavbarLinks from './navbar-links';
 import styles from './navbar.module.css';
 

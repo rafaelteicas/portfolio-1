@@ -1,4 +1,4 @@
-import {SkillsCardContainer} from './skill-card';
+import {SkillsCardContainer} from './styles/skill-card.styles';
 
 interface Props {
   title: string;

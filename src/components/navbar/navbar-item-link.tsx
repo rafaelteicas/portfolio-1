@@ -1,6 +1,6 @@
 'use client';
-import {NavLinkProps} from './types';
-import {NavbarItemsLinks} from './navbar';
+import {NavLinkProps} from '../../domain/navbar/navbar-types';
+import {NavbarItemsLinks} from './styles/navbar.styles';
 
 export default function NavbarItemLink({path, title}: NavLinkProps) {
   return (

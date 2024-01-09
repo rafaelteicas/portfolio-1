@@ -1,4 +1,4 @@
-import {NavLinkProps} from './types';
+import {NavLinkProps} from './navbar-types';
 
 export const navbarMapLinks: NavLinkProps[] = [
   {

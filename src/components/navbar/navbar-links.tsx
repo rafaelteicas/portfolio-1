@@ -1,14 +1,12 @@
 'use client';
-import {NavLinkProps} from './types';
 import NavbarItemLink from './navbar-item-link';
 import {useState} from 'react';
-import Image from 'next/image';
 import {
   NavbarLinksContainer,
   NavbarMenuIcon,
   NavbarMobileLinks,
-} from './navbar';
-import {navbarMapLinks} from './navbar-map-links';
+} from './styles/navbar.styles';
+import {navbarMapLinks} from '../../domain/navbar/navbar-map-links';
 
 export default function NavbarLinks() {
   const links = navbarMapLinks;

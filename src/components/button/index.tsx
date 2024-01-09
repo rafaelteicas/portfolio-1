@@ -1,5 +1,5 @@
 import {useRouter} from 'next/navigation';
-import {ButtonContainer} from './button';
+import {ButtonContainer} from './styles/button.styles';
 import styles from './button.module.css';
 
 interface Props {

@@ -2,7 +2,7 @@
 
 import {Button} from '@/components/button';
 import {SkillsCard} from '@/components/skill-card';
-import {ProjectTypes} from '../projects-types';
+import {ProjectTypes} from '../../../domain/projects/projects-types';
 import Image from 'next/image';
 import Text from '@/components/text';
 import {
@@ -11,7 +11,7 @@ import {
   ProjectsSkillsContainer,
   ProjectsTextContainer,
   SmartphoneContainer,
-} from '../projects';
+} from '../styles/projects.styles';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function ProjectComponent(item: ProjectTypes) {

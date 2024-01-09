@@ -1,6 +1,6 @@
 'use client';
 
-import {FooterContainer} from './footer';
+import {FooterContainer} from './styles/footer.styles';
 
 export default function Footer() {
   return (
