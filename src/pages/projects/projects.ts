@@ -6,6 +6,7 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   display: flex;
   gap: 24px;
+  margin-bottom: 50px;
 `;
 
 export const ProjectsBox = styled.div`

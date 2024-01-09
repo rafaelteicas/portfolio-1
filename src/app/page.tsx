@@ -5,6 +5,7 @@ import Footer from '@/components/footer';
 import HomeContent from '../pages/home-content';
 import About from '../pages/about';
 import Projects from '../pages/projects';
+import {Tools} from '@/pages/tools';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HomeContent />
         <About />
         <Projects />
+        <Tools />
       </div>
       <Footer />
     </div>

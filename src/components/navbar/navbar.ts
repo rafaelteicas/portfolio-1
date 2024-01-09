@@ -27,6 +27,7 @@ export const NavbarLogo = styled.div``;
 export const NavbarLinksContainer = styled.div`
   display: flex;
   gap: 5px;
+  color: var(--text);
   @media (max-width: 768px) {
     display: none;
   }
@@ -37,7 +38,7 @@ export const NavbarMobileLinks = styled.div`
   position: absolute;
   display: flex;
   width: 100vw;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bg);
   flex-direction: column;
   right: 0;
   height: 100vh;
@@ -54,9 +55,6 @@ export const NavbarItemsLinks = styled(Link)`
   border-radius: 20px;
   font-weight: 500;
   text-align: center;
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const NavbarMenuIcon = styled(Image)`

@@ -8,13 +8,10 @@ a {
 }
 
 :root {
-  --bg: #10171e;
+  --bg: #10171ed7;
   --card: #1727354b;
   --text: #FFF;
-  --bgSoft: #222;
-
   --primary: #063254;
-  --onPrimary: #187ef9;
 }
 
 body {
