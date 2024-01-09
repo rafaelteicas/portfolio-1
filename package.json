@@ -10,13 +10,10 @@
   },
   "dependencies": {
     "axios": "^1.6.4",
-    "graphql": "^16.8.1",
-    "graphql-request": "^6.1.0",
     "next": "14.0.4",
-    "ra-data-graphql": "^4.16.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-tilt": "^1.0.2"
+    "react-responsive-carousel": "^3.2.23",
+    "styled-components": "^6.1.7"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
@@ -26,7 +23,11 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
     "postcss": "^8",
+    "prettier": "3.1.1",
+    "prettier-eslint": "^16.2.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

@@ -1,14 +1,19 @@
-import styles from './button.module.css'
+import {useRouter} from 'next/navigation';
+import {ButtonContainer} from './button';
+import styles from './button.module.css';
 
 interface Props {
-  title: string
-  onClick: () => void
+  title: string;
+  url: string;
+  icon?: any;
 }
 
-export function Button({ title, onClick }: Props) {
-    return (
-        <button className={styles.container} onClick={onClick}>
-            {title}
-        </button>
-    );
+export function Button({title, icon, url}: Props) {
+  const router = useRouter();
+  return (
+    <ButtonContainer onClick={() => router.push(url)}>
+      {icon}
+      <b>{title}</b>
+    </ButtonContainer>
+  );
 }

@@ -1,0 +1,20 @@
+.textContainer {
+  font-size: 1rem;
+  margin-top: 12px;
+  color: #ffffff9a
+}
+
+.textContainer b {
+  color: var(--text)
+}
+
+.textContainer b:hover {
+  color: #4bbfb7;
+  cursor: pointer;
+}
+
+.titleContainer {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}

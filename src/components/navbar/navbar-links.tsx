@@ -1,49 +1,39 @@
-"use client"
-import { NavLinkProps } from "./types";
-import NavbarItemLink from "./navbar-item-link";
-import styles from "./navbar.module.css";
-import { useState } from "react";
-
-const links: NavLinkProps[] = [
-    {
-        path: "#home",
-        title: "Home",
-    },
-    {
-        path: "#about",
-        title: "Sobre",
-    },
-    {
-        path: "#skills",
-        title: "Habilidades",
-    },
-    {
-        path: "/about",
-        title: "Sobre",
-    },
-];
-
-// TEMPORARY
-const session = true
-const isAdmin = true
+'use client';
+import {NavLinkProps} from './types';
+import NavbarItemLink from './navbar-item-link';
+import {useState} from 'react';
+import Image from 'next/image';
+import {
+  NavbarLinksContainer,
+  NavbarMenuIcon,
+  NavbarMobileLinks,
+} from './navbar';
+import {navbarMapLinks} from './navbar-map-links';
 
 export default function NavbarLinks() {
-    const [open, setOpen] = useState(false);
-    return (
-        <div>
-            <div className={styles.links}>
-                {links.map(({ path, title }) => (
-                    <NavbarItemLink title={title} path={path} key={title} />
-                ))}
-            </div>
-            <button className={styles.menuButton} onClick={() => setOpen((current) => !current)}>Menu</button>
-            {open && (
-                <div className={styles.mobileLinks}>
-                    {links.map(({ path, title }) => (
-                        <NavbarItemLink title={title} path={path} key={title} />
-                    ))}
-                </div>
-            )}
-        </div>
-    );
+  const links = navbarMapLinks;
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <NavbarLinksContainer>
+        {links.map(({path, title}) => (
+          <NavbarItemLink title={title} path={path} key={title} />
+        ))}
+      </NavbarLinksContainer>
+      <NavbarMenuIcon
+        src={open ? '/icons/close.svg' : '/icons/menu.svg'}
+        width={20}
+        height={20}
+        alt="menu"
+        onClick={() => setOpen(current => !current)}
+      />
+      {open && (
+        <NavbarMobileLinks>
+          {links.map(({path, title}) => (
+            <NavbarItemLink title={title} path={path} key={title} />
+          ))}
+        </NavbarMobileLinks>
+      )}
+    </div>
+  );
 }

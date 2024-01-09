@@ -4,3 +4,7 @@
   align-items: row;
   margin-top: 20px;
 }
+
+.container img {
+  cursor: pointer;
+}

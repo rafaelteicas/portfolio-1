@@ -1,0 +1,15 @@
+.container {
+  flex-direction: row;
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+

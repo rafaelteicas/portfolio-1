@@ -1,9 +1,14 @@
-import styles from './footer.module.css'
+'use client';
+
+import {FooterContainer} from './footer';
 
 export default function Footer() {
   return (
-    <div className={styles.container}>
-      <p>Desenvolvido por Rafael Castro</p>
-     </div>
-  )
+    <FooterContainer>
+      <p>
+        Esse projeto foi desenvolvido com <b>Next.js</b> e
+        <b> Styled Components</b>
+      </p>
+    </FooterContainer>
+  );
 }

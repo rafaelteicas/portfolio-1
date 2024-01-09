@@ -1,14 +1,11 @@
-"use client"
-import Link from "next/link";
-import { NavLinkProps } from "./types";
-import { usePathname } from "next/navigation";
-import styles from './navbar.module.css'
+'use client';
+import {NavLinkProps} from './types';
+import {NavbarItemsLinks} from './navbar';
 
-export default function NavbarItemLink({ path, title }: NavLinkProps) {
-  const pathName = usePathname()
+export default function NavbarItemLink({path, title}: NavLinkProps) {
   return (
-    <Link href={path} key={title} className={`${styles.linksContainer } ${pathName === path && styles.active}`}>
-        {title}
-    </Link>
-  )
+    <NavbarItemsLinks href={path} key={title}>
+      {title}
+    </NavbarItemsLinks>
+  );
 }
