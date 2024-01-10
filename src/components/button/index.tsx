@@ -1,4 +1,3 @@
-import {useRouter} from 'next/navigation';
 import {ButtonContainer} from './styles/button.styles';
 import styles from './button.module.css';
 
@@ -9,9 +8,8 @@ interface Props {
 }
 
 export function Button({title, icon, url}: Props) {
-  const router = useRouter();
   return (
-    <ButtonContainer onClick={() => router.push(url)}>
+    <ButtonContainer href={url} target="_blank">
       {icon}
       <b>{title}</b>
     </ButtonContainer>

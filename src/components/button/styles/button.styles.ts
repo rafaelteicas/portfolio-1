@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.a`
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  padding: 15px 20px;
+  padding: 10px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: var(--bgSoft);
+  background-color: #222;
   color: var(--text);
-  max-width: 200px;
+  width: 150px;
   border: none;
+  b {
+    font-size: 15px;
+  }
 `;
