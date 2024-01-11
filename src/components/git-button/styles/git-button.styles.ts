@@ -2,17 +2,11 @@ import styled from 'styled-components';
 
 export const ButtonContainer = styled.a`
   display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  border-radius: 10px;
+  max-width: 30px;
+  height: 30px;
+  border-radius: 50%;
   cursor: pointer;
-  background-color: #222;
-  color: var(--text);
-  width: 150px;
-  border: none;
-  b {
-    font-size: 15px;
-  }
+  background-color: #000;
 `;

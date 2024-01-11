@@ -1,6 +1,6 @@
 'use client';
 
-import {Button} from '@/components/button';
+import {Button} from '@/components/git-button';
 import {SkillsCard} from '@/components/skill-card';
 import {ProjectTypes} from '../../../domain/projects/projects-types';
 import Image from 'next/image';
