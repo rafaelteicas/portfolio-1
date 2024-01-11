@@ -1,26 +1,23 @@
 'use client';
+import {getLanguageServer} from '@/infra/translate/translate-server';
 import styles from './about.module.css';
 import Text from '@/components/text';
-export default function About() {
+import {ParamsProps} from '@/domain/common/params-props';
+
+export default function About({params}: ParamsProps) {
+  const {translate} = getLanguageServer(params.lang);
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <Text title>Um pouco sobre mim</Text>
+        <Text title>{translate.about.title}</Text>
         <Text>
-          Me chamo Rafael Teixeira de Castro, sou <b>Desenvolvedor Mobile</b>,
-          mas atuo também no desenvolvimento Back-End e Front-End.
+          <div dangerouslySetInnerHTML={{__html: translate.about.p1}} />
         </Text>
         <Text>
-          Iniciei no mundo da programação aos 12 anos construindo pequenos
-          layouts em HTML/CSS para jogos online, mas acabei deixando de lado.
-          Aos 18 anos entrei na federal em Engenharia de Produção, mas percebi
-          que a minha paixão era a programação, então aos 20 anos mudei para o
-          curso de
-          <b> Engenharia de Software</b>, no qual curso atualmente.
+          <div dangerouslySetInnerHTML={{__html: translate.about.p2}} />
         </Text>
         <Text>
-          Atualmente minha principal stack é o <b>Typescript</b>, seja no mobile
-          com <b>React Native</b> ou no back-end com o <b>Node</b>
+          <div dangerouslySetInnerHTML={{__html: translate.about.p3}} />
         </Text>
       </div>
     </div>

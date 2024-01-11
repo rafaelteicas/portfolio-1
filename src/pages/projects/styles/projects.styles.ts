@@ -49,15 +49,7 @@ export const CarouselContainer = styled(Carousel)`
   width: 100%;
   max-width: calc(1290px / 6);
   margin: 0 auto;
-  .control-dots {
-    position: relative;
-    z-index: 1;
-  }
   .carousel-status {
     display: none;
-  }
-  .carousel.carousel-slider .control-arrow {
-    position: absolute;
-    bottom: auto;
   }
 `;

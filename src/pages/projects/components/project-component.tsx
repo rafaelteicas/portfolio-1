@@ -17,7 +17,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 export default function ProjectComponent(item: ProjectTypes) {
   return (
     <ProjectsBox>
-      <CarouselContainer autoFocus>
+      <CarouselContainer autoFocus swipeable>
         {item.screenshot.map(screenshot => (
           <SmartphoneContainer
             src={screenshot}

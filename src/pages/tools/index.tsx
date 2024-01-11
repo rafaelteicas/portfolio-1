@@ -1,11 +1,14 @@
 import Text from '@/components/text';
 import {ToolsContainer, ToolsBox, ToolsImage} from './styles/tools.styles';
-import Image from 'next/image';
+import {getLanguageServer} from '@/infra/translate/translate-server';
+import {ParamsProps} from '@/domain/common/params-props';
 
-export function Tools() {
+export function Tools({params}: ParamsProps) {
+  const {translate} = getLanguageServer(params.lang);
+
   return (
     <ToolsContainer>
-      <Text title>O que eu utilizo</Text>
+      <Text title>{translate.tools.title}</Text>
       <ToolsBox>
         <ToolsImage
           src="/icons/apple.svg"
