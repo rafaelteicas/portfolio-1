@@ -2,11 +2,13 @@
 import NavbarItemLink from './navbar-item-link';
 import {useState} from 'react';
 import {
+  NavbarFlag,
   NavbarLinksContainer,
   NavbarMenuIcon,
   NavbarMobileLinks,
 } from './styles/navbar.styles';
 import {navbarMapLinks} from '../../domain/navbar/navbar-map-links';
+import Image from 'next/image';
 
 export default function NavbarLinks({lang}: {lang: string}) {
   const links = navbarMapLinks;
@@ -33,7 +35,12 @@ export default function NavbarLinks({lang}: {lang: string}) {
       {open && (
         <NavbarMobileLinks>
           {links.map(({path, title}) => (
-            <NavbarItemLink title={title} path={path} key={title} />
+            <NavbarItemLink
+              title={title}
+              path={path}
+              key={title}
+              onClick={() => setOpen(false)}
+            />
           ))}
         </NavbarMobileLinks>
       )}

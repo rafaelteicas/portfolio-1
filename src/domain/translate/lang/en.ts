@@ -14,7 +14,9 @@ export const en = {
       p3: 'Currently my main stack is <b>Typescript</b>, whether on mobile with <b>React Native</b> or on the back-end with <b>Node</b>',
     },
     tools: {
-      title: 'WHAT I USE',
+      title: 'What i use',
     },
+    footer:
+      'This project was developed with <b>Next.js</b> and <b>Styled Components</b>',
   },
 };

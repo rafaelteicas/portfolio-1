@@ -64,3 +64,40 @@ export const NavbarMenuIcon = styled(Image)`
     cursor: pointer;
   }
 `;
+
+export const NavbarFlag = styled(Image)`
+  margin-left: 20px;
+  cursor: pointer;
+`;
+
+export const NavbarDropdownContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 120px;
+  border-radius: 12px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  @media (max-width: 768px) {
+    right: 20px;
+  }
+`;
+
+export const NavbarDropdownFlagContainer = styled.div`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  margin-top: 10px;
+  p {
+    color: #000;
+    font-size: 12px;
+  }
+  &:hover {
+    background-color: #eee;
+    border-radius: 20px;
+  }
+`;

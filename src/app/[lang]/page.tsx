@@ -19,7 +19,7 @@ export default function Home({params}: ParamsProps) {
         <Projects params={params} />
         <Tools params={params} />
       </div>
-      <Footer />
+      <Footer params={params} />
     </div>
   );
 }

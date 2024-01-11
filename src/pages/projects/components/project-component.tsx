@@ -14,6 +14,8 @@ import {
 } from '../styles/projects.styles';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+const ICON_SIZE = 20;
+
 export default function ProjectComponent(item: ProjectTypes) {
   return (
     <ProjectsBox>
@@ -36,15 +38,17 @@ export default function ProjectComponent(item: ProjectTypes) {
             <SkillsCard title={skill} key={skill} />
           ))}
         </ProjectsSkillsContainer>
-        <div>
-          <Button
-            title="REPOSITÓRIO"
-            url={item.gitUrl}
-            icon={
-              <Image src="/icons/github.png" width={10} height={10} alt="git" />
-            }
-          />
-        </div>
+        <Button
+          url={item.gitUrl}
+          icon={
+            <Image
+              src="/icons/github.png"
+              width={ICON_SIZE}
+              height={ICON_SIZE}
+              alt="git"
+            />
+          }
+        />
         {item.backend && (
           <>
             <ProjectsTextContainer>
@@ -63,20 +67,17 @@ export default function ProjectComponent(item: ProjectTypes) {
                 ))}
               </ProjectsSkillsContainer>
             </ProjectsTextContainer>
-            <div>
-              <Button
-                title="REPOSITÓRIO"
-                url={item.backend.gitUrl ? item.backend.gitUrl : '/'}
-                icon={
-                  <Image
-                    src="/icons/github.png"
-                    width={10}
-                    height={10}
-                    alt="git"
-                  />
-                }
-              />
-            </div>
+            <Button
+              url={item.backend.gitUrl ? item.backend.gitUrl : '/'}
+              icon={
+                <Image
+                  src="/icons/github.png"
+                  width={ICON_SIZE}
+                  height={ICON_SIZE}
+                  alt="git"
+                />
+              }
+            />
           </>
         )}
       </ProjectsTextContainer>

@@ -16,5 +16,7 @@ export const pt = {
     tools: {
       title: 'O que eu utilizo',
     },
+    footer:
+      'Esse projeto foi desenvolvido com <b>Next.js</b> e <b>Styled Components</b>',
   },
 };
