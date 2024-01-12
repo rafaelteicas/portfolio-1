@@ -11,13 +11,13 @@ const socialMediaMap = [
   },
   {
     src: '/icons/social-media/github.svg',
-    alt: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/rafacastro21/',
+    alt: 'Github',
+    url: 'https://github.com/rafaelteicas/',
   },
   {
     src: '/icons/social-media/youtube.svg',
-    alt: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/rafacastro21/',
+    alt: 'Youtube',
+    url: 'https://www.youtube.com/channel/UCYoctnFPGzNN-q1_Z-JyFGQ',
   },
 ];
 
