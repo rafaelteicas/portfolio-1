@@ -1,16 +1,12 @@
-import Text from '@/components/text';
 import {
   ToolsContainer,
   SetupContainer,
   ToolsImage,
   ToolsBox,
 } from './styles/setup.styles';
-import {getLanguageServer} from '@/infra/translate/translate-server';
 import {ParamsProps} from '@/domain/common/params-props';
 
-export function Tools({params}: ParamsProps) {
-  const {translate} = getLanguageServer(params.lang);
-
+export default function Tools({params}: ParamsProps) {
   return (
     <ToolsContainer id="setup">
       <SetupContainer>

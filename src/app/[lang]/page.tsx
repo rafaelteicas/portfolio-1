@@ -2,7 +2,7 @@
 
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import {Tools} from '@/pages/setup';
+import Setup from '@/pages/setup';
 import HomeContent from '@/pages/home-content';
 import About from '@/pages/about';
 import Projects from '@/pages/projects';
@@ -17,7 +17,7 @@ export default function Home({params}: ParamsProps) {
         <HomeContent params={params} />
         <About params={params} />
         <Projects params={params} />
-        <Tools params={params} />
+        <Setup params={params} />
       </div>
       <Footer params={params} />
     </div>
