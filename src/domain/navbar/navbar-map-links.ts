@@ -11,4 +11,9 @@ export const navbarMapLinks: NavLinkProps[] = [
     title: 'Projetos',
     titleEn: 'Projects',
   },
+  {
+    path: '#setup',
+    title: 'Setup',
+    titleEn: 'Setup',
+  },
 ];

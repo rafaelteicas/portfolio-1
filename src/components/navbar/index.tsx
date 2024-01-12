@@ -20,7 +20,7 @@ export default function Navbar({params}: ParamsProps) {
     <header>
       <NavbarContainer>
         <NavbarItems>
-          <NavbarLogo>Ainda não tem logo</NavbarLogo>
+          <NavbarLogo>RAFAEL</NavbarLogo>
           <NavbarLinks lang={params.lang} />
         </NavbarItems>
         <NavbarFlag
