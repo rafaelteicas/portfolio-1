@@ -4,7 +4,6 @@ import styles from './home.module.css';
 import SocialMedia from '@/components/social-media';
 import {getLanguageServer} from '@/infra/translate/translate-server';
 import {ParamsProps} from '@/domain/common/params-props';
-import {Typewriter} from 'react-simple-typewriter';
 
 export default function HomeContent({params}: ParamsProps) {
   const {translate} = getLanguageServer(params.lang);
