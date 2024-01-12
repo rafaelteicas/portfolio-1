@@ -2,11 +2,10 @@
 
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import Setup from '@/pages/setup';
-import HomeContent from '@/pages/home-content';
-import About from '@/pages/about';
-import Projects from '@/pages/projects';
-import {Locale} from '@/infra/translate/i18n';
+import Setup from '@/sections/setup';
+import HomeContent from '@/sections/home-content';
+import About from '@/sections/about';
+import Projects from '@/sections/projects';
 import {ParamsProps} from '@/domain/common/params-props';
 
 export default function Home({params}: ParamsProps) {
