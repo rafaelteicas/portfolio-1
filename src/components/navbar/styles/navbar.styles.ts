@@ -9,9 +9,14 @@ export const Header = styled.header`
   height: 80px;
   position: fixed;
   align-items: center;
+  justify-content: center;
   border-bottom: 0.1em solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   z-index: 1;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    height: 60px;
+    background-color: var(--card);
+  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -63,6 +68,9 @@ export const NavbarMobileLinks = styled.div`
   backdrop-filter: blur(10px);
   background-color: var(--card);
   -webkit-tap-highlight-color: transparent;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    top: 60px;
+  }
 `;
 
 export const NavbarItemsLinks = styled(Link)`
