@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const FooterContainer = styled.div`
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  color: var(--text);
   backdrop-filter: blur(10px);
   height: 80px;
   display: flex;

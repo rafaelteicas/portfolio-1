@@ -1,5 +1,6 @@
 'use client';
 import {
+  Header,
   NavbarContainer,
   NavbarFlag,
   NavbarItems,
@@ -17,14 +18,14 @@ export default function Navbar({params}: ParamsProps) {
     setVisible(current => !current);
   }
   return (
-    <header>
+    <Header>
       <NavbarContainer>
         <NavbarItems>
           <NavbarLogo>RAFAEL</NavbarLogo>
           <NavbarLinks lang={params.lang} />
         </NavbarItems>
         <NavbarFlag
-          src={`/icons/${icon}`}
+          src={`/icons/flags/${icon}`}
           width={24}
           height={24}
           alt="flag"
@@ -32,6 +33,6 @@ export default function Navbar({params}: ParamsProps) {
         />
         <NavbarDropdown visible={visible} />
       </NavbarContainer>
-    </header>
+    </Header>
   );
 }

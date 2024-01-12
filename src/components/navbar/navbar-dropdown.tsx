@@ -11,12 +11,12 @@ interface Props {
 
 const mapFlags = [
   {
-    src: '/icons/br.png',
+    src: '/icons/flags/br.png',
     title: 'Portuguese',
     lang: 'pt',
   },
   {
-    src: '/icons/eua.png',
+    src: '/icons/flags/eua.png',
     title: 'English',
     lang: 'en',
   },

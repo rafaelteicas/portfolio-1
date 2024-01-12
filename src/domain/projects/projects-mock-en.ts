@@ -5,12 +5,7 @@ export const projectMockEn: ProjectTypes[] = [
     title: 'VCONNECT APP',
     description:
       'VConnect is an application that allows you to find people to play with anywhere, just make a post or send a message for someone to find you, according to your level and skills.',
-    screenshot: [
-      '/images/vconnect.png',
-      '/images/vconnect2.png',
-      '/images/vconnect3.png',
-      '/images/vconnect4.png',
-    ],
+    screenshot: '/images/screenshots/vconnect/vconnect.png',
     skills: ['React Native', 'Firebase', 'Restyle', 'MMKV', 'Zustand'],
     gitUrl: 'https://github.com/rafaelteicas/ValorantConnectApp',
     backend: {
@@ -33,7 +28,7 @@ export const projectMockEn: ProjectTypes[] = [
     description:
       'Nubble App is a social network application in which you can connect with people from all over the world, posting things related to your daily life or liking and commenting on posts from friends or any user.',
     gitUrl: '',
-    screenshot: ['/images/nubble.png'],
+    screenshot: '/images/screenshots/nubble/nubble.png',
     skills: ['React Native', 'Firebase', 'Restyle', 'MMKV', 'Zustand'],
   },
 ];

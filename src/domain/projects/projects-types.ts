@@ -1,5 +1,5 @@
 export interface ProjectTypes {
-  screenshot: string[];
+  screenshot: string;
   title: string;
   description: string;
   skills: string[];

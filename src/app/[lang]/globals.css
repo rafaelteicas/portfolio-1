@@ -8,37 +8,15 @@ a {
 }
 
 :root {
-  --bg: #10171ed7;
-  --card: #1727354b;
+  --bg:  #08161c, #092b3a;
+  --card: #08161c;
   --text: #FFF;
   --primary: #063254;
+  --menu: #08161c;
+  
 }
 
 body {
-  background-image: linear-gradient(to right top, #192513, #0e271b, #022825, #00292f, #022836, #092b3a, #102d3e, #173042, #163847, #19404a, #1f484c, #294f4d);
-  color: var(--text);
-}
+  background-image: linear-gradient(to right top, var(--bg));
 
-.children {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1280px) {
-  .children {
-    max-width: 600px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .children {
-    max-width: 90%;
-  }
-}
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }

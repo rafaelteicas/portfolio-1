@@ -26,7 +26,7 @@ export default function NavbarLinks({lang}: {lang: string}) {
         ))}
       </NavbarLinksContainer>
       <NavbarMenuIcon
-        src={open ? '/icons/close.svg' : '/icons/menu.svg'}
+        src={open ? '/icons/menu/close.svg' : '/icons/menu/menu.svg'}
         width={20}
         height={20}
         alt="menu"

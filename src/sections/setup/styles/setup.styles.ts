@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const ToolsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 `;
 
 export const SetupContainer = styled.div`

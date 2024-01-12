@@ -2,16 +2,24 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export const NavbarContainer = styled.div`
+export const Header = styled.header`
   display: flex;
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 80px;
+  position: fixed;
   align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(10px);
   border-bottom: 0.1em solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
   z-index: 1;
+`;
+
+export const NavbarContainer = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 0px 50px;
+  align-items: center;
 `;
 
 export const NavbarItems = styled.div`
@@ -31,28 +39,29 @@ export const NavbarLinksContainer = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+  a:hover {
+    background-color: var(--card);
+  }
 `;
 
 export const NavbarMobileLinks = styled.div`
-  top: 0;
   position: absolute;
   display: flex;
   width: 100vw;
-  background-color: var(--bg);
+  height: 100vh;
+  color: var(--text);
   flex-direction: column;
   right: 0;
-  height: 100vh;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  overflow: hidden;
-  z-index: -1;
+  top: 80px;
+  backdrop-filter: blur(10px);
+  background-color: var(--card);
 `;
 
 export const NavbarItemsLinks = styled(Link)`
-  min-width: 100px;
+  min-width: 50px;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 12px;
   font-weight: 500;
   text-align: center;
 `;

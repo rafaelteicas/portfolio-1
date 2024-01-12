@@ -1,26 +1,33 @@
 import Image from 'next/image';
-import {Carousel} from 'react-responsive-carousel';
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
   flex-direction: column;
   display: flex;
+  align-items: center;
   gap: 24px;
   margin-bottom: 50px;
+  padding: 20px 50px;
+  background-color: #00000040;
+  color: var(--text);
+  @media (max-width: 1280px) {
+    padding: 20px 0px;
+  }
 `;
 
 export const ProjectsBox = styled.div`
-  display: flex;
+  border: 0.1em solid #0d2732;
+  width: 80%;
   flex: 1;
   padding: 30px;
-  background-color: var(--card);
-  border-radius: 20px;
+  border-radius: 12px;
   gap: 50px;
   align-items: center;
+  display: flex;
+  flex-direction: row;
   @media (max-width: 1280px) {
     flex-direction: column;
     align-items: center;
-    gap: 0px;
   }
 `;
 
@@ -29,6 +36,7 @@ export const ProjectsTextContainer = styled.div`
   flex-direction: column;
   max-width: 100%;
   gap: 30px;
+  color: var(--text);
 `;
 
 export const ProjectsSkillsContainer = styled.div`
@@ -38,18 +46,9 @@ export const ProjectsSkillsContainer = styled.div`
   gap: 10px;
 `;
 
-export const SmartphoneContainer = styled(Image)`
+export const ImageContainer = styled(Image)`
   position: relative;
-  width: calc(1290px / 6);
   height: calc(2796px / 6);
-  border-radius: 20px;
-`;
-
-export const CarouselContainer = styled(Carousel)`
-  width: 100%;
+  border-radius: 12px;
   max-width: calc(1290px / 6);
-  margin: 0 auto;
-  .carousel-status {
-    display: none;
-  }
 `;

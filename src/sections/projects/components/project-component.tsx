@@ -6,30 +6,23 @@ import {ProjectTypes} from '../../../domain/projects/projects-types';
 import Image from 'next/image';
 import Text from '@/components/text';
 import {
-  CarouselContainer,
+  ImageContainer,
   ProjectsBox,
   ProjectsSkillsContainer,
   ProjectsTextContainer,
-  SmartphoneContainer,
 } from '../styles/projects.styles';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ICON_SIZE = 20;
 
 export default function ProjectComponent(item: ProjectTypes) {
   return (
     <ProjectsBox>
-      <CarouselContainer autoFocus swipeable>
-        {item.screenshot.map(screenshot => (
-          <SmartphoneContainer
-            src={screenshot}
-            width={1000}
-            height={1000}
-            alt="aa"
-            key={screenshot}
-          />
-        ))}
-      </CarouselContainer>
+      <ImageContainer
+        src={item.screenshot}
+        alt={item.screenshot}
+        width={200}
+        height={400}
+      />
       <ProjectsTextContainer>
         <Text title>{item.title}</Text>
         <Text>{item.description}</Text>

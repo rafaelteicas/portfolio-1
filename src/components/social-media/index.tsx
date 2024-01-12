@@ -1,29 +1,27 @@
 import Image from 'next/image';
 import styles from './social-media.module.css';
 
-const ICONS_SIZE = 40;
+const ICONS_SIZE = 30;
 
 const socialMediaMap = [
   {
-    src: '/icons/linkedin.png',
+    src: '/icons/social-media/linkedin.svg',
     alt: 'LinkedIn',
     url: 'https://www.linkedin.com/in/rafacastro21/',
   },
   {
-    src: '/icons/github.png',
+    src: '/icons/social-media/github.svg',
     alt: 'LinkedIn',
     url: 'https://www.linkedin.com/in/rafacastro21/',
   },
   {
-    src: '/icons/youtube.png',
+    src: '/icons/social-media/youtube.svg',
     alt: 'LinkedIn',
     url: 'https://www.linkedin.com/in/rafacastro21/',
   },
 ];
 
 export default function SocialMedia() {
-  const socialMedias = socialMediaMap;
-
   return (
     <div className={styles.container}>
       {socialMediaMap.map(item => (
