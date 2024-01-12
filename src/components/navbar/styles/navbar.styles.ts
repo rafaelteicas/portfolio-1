@@ -30,7 +30,9 @@ export const NavbarItems = styled.div`
   max-width: 80%;
 `;
 
-export const NavbarLogo = styled.div``;
+export const NavbarLogo = styled.div`
+  color: var(--text);
+`;
 
 export const NavbarLinksContainer = styled.div`
   display: flex;
@@ -48,7 +50,8 @@ export const NavbarMobileLinks = styled.div`
   position: absolute;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  padding: 20px 0px;
+  gap: 10px;
   color: var(--text);
   flex-direction: column;
   right: 0;
@@ -56,6 +59,7 @@ export const NavbarMobileLinks = styled.div`
   top: 80px;
   backdrop-filter: blur(10px);
   background-color: var(--card);
+  -webkit-tap-highlight-color: transparent;
 `;
 
 export const NavbarItemsLinks = styled(Link)`
@@ -68,6 +72,7 @@ export const NavbarItemsLinks = styled(Link)`
 
 export const NavbarMenuIcon = styled(Image)`
   display: none;
+  -webkit-tap-highlight-color: transparent;
   @media (max-width: 768px) {
     display: block;
     cursor: pointer;
@@ -77,6 +82,7 @@ export const NavbarMenuIcon = styled(Image)`
 export const NavbarFlag = styled(Image)`
   margin-left: 20px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 export const NavbarDropdownContainer = styled.div`
@@ -92,6 +98,7 @@ export const NavbarDropdownContainer = styled.div`
   @media (max-width: 768px) {
     right: 20px;
   }
+  -webkit-tap-highlight-color: transparent;
 `;
 
 export const NavbarDropdownFlagContainer = styled.div`
@@ -101,6 +108,7 @@ export const NavbarDropdownFlagContainer = styled.div`
   gap: 12px;
   padding: 10px;
   margin-top: 10px;
+  -webkit-tap-highlight-color: transparent;
   p {
     color: #000;
     font-size: 12px;

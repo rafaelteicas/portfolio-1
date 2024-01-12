@@ -3,7 +3,6 @@
 import {Button} from '@/components/git-button';
 import {SkillsCard} from '@/components/skill-card';
 import {ProjectTypes} from '../../../domain/projects/projects-types';
-import Image from 'next/image';
 import Text from '@/components/text';
 import {
   ImageContainer,
@@ -11,8 +10,6 @@ import {
   ProjectsSkillsContainer,
   ProjectsTextContainer,
 } from '../styles/projects.styles';
-
-const ICON_SIZE = 20;
 
 export default function ProjectComponent(item: ProjectTypes) {
   return (
@@ -31,17 +28,7 @@ export default function ProjectComponent(item: ProjectTypes) {
             <SkillsCard title={skill} key={skill} />
           ))}
         </ProjectsSkillsContainer>
-        <Button
-          url={item.gitUrl}
-          icon={
-            <Image
-              src="/icons/github.png"
-              width={ICON_SIZE}
-              height={ICON_SIZE}
-              alt="git"
-            />
-          }
-        />
+        <Button url={item.gitUrl} />
         {item.backend && (
           <>
             <ProjectsTextContainer>
@@ -60,17 +47,7 @@ export default function ProjectComponent(item: ProjectTypes) {
                 ))}
               </ProjectsSkillsContainer>
             </ProjectsTextContainer>
-            <Button
-              url={item.backend.gitUrl ? item.backend.gitUrl : '/'}
-              icon={
-                <Image
-                  src="/icons/github.png"
-                  width={ICON_SIZE}
-                  height={ICON_SIZE}
-                  alt="git"
-                />
-              }
-            />
+            <Button url={item.gitUrl} />
           </>
         )}
       </ProjectsTextContainer>
