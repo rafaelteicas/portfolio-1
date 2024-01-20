@@ -12,7 +12,7 @@ export default function HomeContent({params}: ParamsProps) {
       <div className={styles.container}>
         <div className={styles.imgContainer}>
           <Image
-            src="/images/me.jpg"
+            src="https://github.com/rafaelteicas.png"
             fill
             alt="me"
             style={{
