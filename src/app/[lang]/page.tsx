@@ -1,21 +1,24 @@
 'use client';
 
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
-import Setup from '@/sections/setup';
 import HomeContent from '@/sections/home';
 import About from '@/sections/about';
 import Projects from '@/sections/projects';
 import {ParamsProps} from '@/domain/common/params-props';
+import Skills from '@/sections/skills';
+import Setup from '@/sections/tools';
 
 export default function Home({params}: ParamsProps) {
   return (
     <div className="container">
-      <Navbar params={params} />
-      <HomeContent params={params} />
-      <About params={params} />
-      <Projects params={params} />
-      <Footer params={params} />
+      <div className="leftContainer">
+        <HomeContent params={params} />
+      </div>
+      <div className="rightContainer">
+        <About params={params} />
+        <Projects params={params} />
+        <Setup />
+        <Skills />
+      </div>
     </div>
   );
 }

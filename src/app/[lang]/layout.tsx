@@ -24,7 +24,6 @@ export default function RootLayout({children, params: {lang}}: Props) {
   return (
     <html lang={lang}>
       <meta name="theme-color" content="#08161c" />
-      <head />
       <body className={inter.className}>{children}</body>
     </html>
   );

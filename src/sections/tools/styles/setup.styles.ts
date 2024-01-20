@@ -4,18 +4,8 @@ import styled from 'styled-components';
 export const ToolsContainer = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-export const SetupContainer = styled.div`
-  display: flex;
-  justify-content: center;
   border-radius: 12px;
-  margin-top: 20px;
-  background-color: var(--bg);
-  padding: 20px;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  gap: var(--contentGap);
 `;
 
 export const ToolsImage = styled(Image)`
@@ -26,6 +16,8 @@ export const ToolsImage = styled(Image)`
 
 export const ToolsBox = styled.div`
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  background-color: var(--card);
+  padding: 10px;
+  border-radius: 12px;
 `;
