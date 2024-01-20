@@ -9,18 +9,14 @@ export default function About({params}: ParamsProps) {
   return (
     <section id={styles.about}>
       <div className={styles.container}>
-        <div className={styles.textContainer}>
-          <Text title>{translate.about.title}</Text>
-          <Text>
-            <div dangerouslySetInnerHTML={{__html: translate.about.p1}} />
-          </Text>
-          <Text>
-            <div dangerouslySetInnerHTML={{__html: translate.about.p2}} />
-          </Text>
-          <Text>
-            <div dangerouslySetInnerHTML={{__html: translate.about.p3}} />
-          </Text>
-        </div>
+        <Text title>{translate.about.title}</Text>
+        <Text>
+          <div dangerouslySetInnerHTML={{__html: translate.about.p1}} />
+          <br />
+          <div dangerouslySetInnerHTML={{__html: translate.about.p2}} />
+          <br />
+          <div dangerouslySetInnerHTML={{__html: translate.about.p3}} />
+        </Text>
       </div>
     </section>
   );

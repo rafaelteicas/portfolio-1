@@ -9,14 +9,68 @@ a {
 
 :root {
   --bg:  #08161c, #092b3a;
-  --card: #08161c;
   --text: #FFF;
   --primary: #063254;
   --menu: #08161c;
-  
+
+  --card: #00000040;
+  --cardLine: 0.1em solid #0d2732;
+
+  --defaultGap: 50px;
+  --contentGap: 20px
 }
 
 body {
-  background-image: linear-gradient(to right top, var(--bg));
+  display: flex;
+  justify-content: center;
+  color: var(--text);
+  background: linear-gradient(to right top, var(--bg));
+}
 
+.container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex: 1;
+  max-width: 80%;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 50px;
+  @media (max-width: 1028px) {
+      padding-top: 0px;
+      flex-direction: column;
+      gap: var(--defaultGap);
+      max-width: 80%;
+      padding-left: 0%;
+      padding-right: 0%;
+    };
+}
+
+.leftContainer{
+  position: fixed;
+  display: flex;
+  max-width: 40%;
+  height: 100vh;
+  flex-direction: column;
+  @media (max-width: 1028px) {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.rightContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--defaultGap);
+  max-width: 60%;
+  margin-left: 40%;
+  @media (max-width: 1028px) {
+    position: relative;
+    margin-left: 0;
+    max-width: 100%;
+  }
 }

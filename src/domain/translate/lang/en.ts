@@ -1,7 +1,6 @@
 export const en = {
   translate: {
     home: {
-      title: `Hi, i'm`,
       subtitle: 'Mobile Developer',
     },
     projects: {

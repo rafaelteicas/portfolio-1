@@ -2,33 +2,58 @@ import {ProjectTypes} from './projects-types';
 
 export const projectMockEn: ProjectTypes[] = [
   {
-    title: 'VCONNECT APP',
+    title: 'VConnection',
     description:
-      'VConnect is an application that allows you to find people to play with anywhere, just make a post or send a message for someone to find you, according to your level and skills.',
-    screenshot: '/images/screenshots/vconnect/vconnect.png',
-    skills: ['React Native', 'Firebase', 'Restyle', 'MMKV', 'Zustand'],
+      'O VConnect é um aplicativo que permite que você encontre pessoas para jogar em qualquer lugar, basta fazer uma postagem, ou enviar uma mensagem para que alguém te encontre, de acordo com seu nível e suas habilidades.',
+    screenshot: [
+      '/images/screenshots/vconnection/1.png',
+      '/images/screenshots/vconnection/2.png',
+      '/images/screenshots/vconnection/3.png',
+      '/images/screenshots/vconnection/4.png',
+      '/images/screenshots/vconnection/5.png',
+      '/images/screenshots/vconnection/6.png',
+    ],
+    skills: [
+      'React Native',
+      'Restyle',
+      'Typescript',
+      'Zustand',
+      'MMKV',
+      'Context API',
+      'Reanimated V3',
+    ],
+    projectImage: '/images/projects/vconnection.png',
     gitUrl: 'https://github.com/rafaelteicas/ValorantConnectApp',
     backend: {
-      title: 'BACKEND VCONNECT',
+      title: 'BACKEND VCONNECTION',
       description:
-        '<li>Auth</li><li>Token e Refresh token</li><li>Posts CRUD</li><li>Paging</li><li>User profile picture</li><li>Deployed on Heroku</li>',
+        '<li>Autenticação</li><li>Token e Refresh token</li><li>CRUD de postagens</li><li>Paginação</li><li>Fotos de perfil de usuário</li><li>Deploy feito no Heroku</li>',
       gitUrl: 'https://github.com/rafaelteicas/ValorantConnectApi',
-      skills: [
-        'Node JS',
-        'Express',
-        'TypeORM',
-        'Docker',
-        'Postgres',
-        'Firebase',
-      ],
+      skills: [''],
     },
+    url: 'vconnect',
   },
   {
-    title: 'Nubble app',
+    title: 'NubbleApp',
     description:
-      'Nubble App is a social network application in which you can connect with people from all over the world, posting things related to your daily life or liking and commenting on posts from friends or any user.',
-    gitUrl: '',
-    screenshot: '/images/screenshots/nubble/nubble.png',
-    skills: ['React Native', 'Firebase', 'Restyle', 'MMKV', 'Zustand'],
+      'O NubbleApp é um aplicativo de uma rede social semelhante ao Instagram.',
+    screenshot: [
+      '/images/screenshots/nubble/1.png',
+      '/images/screenshots/nubble/2.png',
+      '/images/screenshots/nubble/3.png',
+      '/images/screenshots/nubble/4.png',
+    ],
+    skills: [
+      'React Native',
+      'Restyle',
+      'Typescript',
+      'Zustand',
+      'MMKV',
+      'Context API',
+      'Reanimated V3',
+    ],
+    projectImage: '/images/projects/nubble.png',
+    gitUrl: 'https://github.com/rafaelteicas/ValorantConnectApp',
+    url: 'nubble',
   },
 ];

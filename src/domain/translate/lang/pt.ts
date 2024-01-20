@@ -1,8 +1,7 @@
 export const pt = {
   translate: {
     home: {
-      title: 'Olá, me chamo',
-      subtitle: 'Desenvolvedor Mobile',
+      subtitle: '',
     },
     projects: {
       title: 'Principais projetos',

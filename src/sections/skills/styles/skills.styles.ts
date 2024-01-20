@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const SkillsContainer = styled.div`
-  width: 100%;
-  position: absolute;
-  left: 0;
-  height: 80px;
-  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--contentGap);
+`;
+
+export const SkillsCardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: var(--contentGap);
+  flex-wrap: wrap;
 `;
