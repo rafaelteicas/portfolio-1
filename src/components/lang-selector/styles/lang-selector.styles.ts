@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const DropdownContainer = styled.div`
   position: absolute;
-  z-index: 99999;
+  z-index: 99;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -15,6 +15,9 @@ export const DropdownContainer = styled.div`
     right: 20px;
   }
   -webkit-tap-highlight-color: transparent;
+  -webkit-text-fill-color: black;
+  font-weight: 500;
+  left: 0;
 `;
 
 export const DropdownFlagContainer = styled.div`
@@ -38,5 +41,4 @@ export const DropdownFlagContainer = styled.div`
 export const Flag = styled(Image)`
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  margin-left: 10px;
 `;

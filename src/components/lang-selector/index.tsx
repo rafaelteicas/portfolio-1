@@ -6,7 +6,6 @@ import {
 } from './styles/lang-selector.styles';
 import {useState} from 'react';
 import {ParamsProps} from '@/domain/common/params-props';
-
 interface Props {
   visible: boolean;
 }

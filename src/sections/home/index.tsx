@@ -20,12 +20,16 @@ export default function HomeContent({params}: ParamsProps) {
             }}
           />
         </div>
-        <div className={styles.textContainer}>
-          <h1>
-            <span className={styles.span}>Rafael Castro</span>
+        <>
+          <span className={styles.span}>
+            Rafael
             <LangSelector params={params} />
-          </h1>
-        </div>
+            Castro
+          </span>
+          <p style={{fontSize: 10, opacity: 0.5}}>
+            (clique na bandeira para trocar a linguagem)
+          </p>
+        </>
       </div>
       <SocialMedia />
     </section>

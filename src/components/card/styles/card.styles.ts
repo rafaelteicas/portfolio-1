@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
   border-radius: 12px;
   border: var(--cardLine);
   padding: 20px;
-  min-width: 100%;
+  width: 90%;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
